@@ -7,7 +7,7 @@ To use this plugin use the addSbtPlugin command within your project's
 plugins.sbt (or as a global setting) i.e.:
 
 ```scala
-addSbtPlugin("com.github.shiftfocus" % "sbt-reactjs" % "0.6.8")
+addSbtPlugin("com.github.shiftfocus" % "sbt-reactjs" % "0.7.1")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with build.sbt:
