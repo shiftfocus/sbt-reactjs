@@ -4,7 +4,7 @@ sbtPlugin := true
 
 name := "sbt-reactjs"
 
-organization := "com.github.ddispaltro"
+organization := "com.github.shiftfocus"
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 

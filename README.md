@@ -1,12 +1,5 @@
 # ReactJS Source Compiler
 
-![Scala CI](https://github.com/dispalt/sbt-reactjs/workflows/Scala%20CI/badge.svg)
-
- - The master series is for React 0.14.x
- - The [0.4.x](https://github.com/ddispaltro/sbt-reactjs/tree/0.4.x) series is for React 0.12
- - The [0.3.x](https://github.com/ddispaltro/sbt-reactjs/tree/0.3.x) series is for React 0.11
- - The [0.2.x](https://github.com/ddispaltro/sbt-reactjs/tree/0.2.x) series is for React 0.10
-
 This plugin hooks your JSX files in to the Asset compilation phase.
 It uses the autoPlugin feature with `0.13.5` to make the setup dead-simple.
 
@@ -14,7 +7,7 @@ To use this plugin use the addSbtPlugin command within your project's
 plugins.sbt (or as a global setting) i.e.:
 
 ```scala
-addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.6.8")
+addSbtPlugin("com.github.shiftfocus" % "sbt-reactjs" % "0.6.8")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with build.sbt:
@@ -22,6 +15,10 @@ Your project's build file also needs to enable sbt-web plugins. For example with
 ```scala
 lazy val root = (project in file(".")).enablePlugins(SbtWeb)
 ```
+
+## Other notes
+
+You may clone the repo and `sbt publishLocal` to make this available in your local ivy2 cache for other Play/sbt projects. 
 
 ## Options
 
